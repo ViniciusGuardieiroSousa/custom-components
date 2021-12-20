@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CountComponent">
+        <attr name="incrementColor" format="color"/>
+        <attr name="decrementColor" format="color"/>
+        <attr name="initialValue" format="integer"/>
+    </declare-styleable>
+</resources>

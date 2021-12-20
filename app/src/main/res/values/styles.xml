@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    -->
+    <style name="CountComponent" parent="android:Widget">
+        <item name="initialValue">1</item>
+    </style>
+
+    <style name="CountComponent.Primary">
+        <item name="incrementColor">?colorPrimary</item>
+        <item name="decrementColor">?colorError</item>
+    </style>
+
+</resources>

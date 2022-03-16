@@ -9,7 +9,11 @@ import br.com.guardiaoinc.customview.databinding.CountComponentBinding
 
 class CountComponent : LinearLayout {
 
-    private lateinit var binding: CountComponentBinding
+    private val binding: CountComponentBinding = CountComponentBinding.inflate(
+        LayoutInflater.from(context),
+        this,
+        true
+    )
 
     var incrementColor: Int = 0
         set(value) {
@@ -31,7 +35,7 @@ class CountComponent : LinearLayout {
 
     constructor(context: Context) : this(context, null)
 
-    constructor(context: Context, attrs: AttributeSet?) : this(context, attrs, 0)
+    constructor(context: Context, attrs: AttributeSet?) : this(context, attrs, R.attr.countComponentTheme)
 
     constructor(context: Context, attrs: AttributeSet?, defStyleAttr: Int) : this(
         context,
@@ -46,13 +50,6 @@ class CountComponent : LinearLayout {
         defStyleAttr: Int,
         defStyleRes: Int
     ) : super(context, attrs, defStyleAttr, defStyleRes) {
-
-
-        binding = CountComponentBinding.inflate(
-            LayoutInflater.from(context),
-            this,
-            true
-        )
 
 
         val typedArray = context.theme.obtainStyledAttributes(

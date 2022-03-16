@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <attr name="countComponentTheme" format="reference"/>
     <declare-styleable name="CountComponent">
         <attr name="incrementColor" format="color"/>
         <attr name="decrementColor" format="color"/>
